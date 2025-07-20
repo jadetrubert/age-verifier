@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Verifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Age Verifier</h1>
+    </header>
+    <section>
+        <div>
+            <p>Year of birth
+                <input type="number" name="txtyear" id="txtyear" min="0">
+            </p>
+            <p>
+                Sex:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Male</label>
+                <input type="radio" name='radsex' id="fem">
+                <label for="fem">Female</label>
+            </p>
+            <p>
+                <input type="button" value="Verify" onclick="verify()">
+            </p>
+
+        </div>
+        <div id="res">
+            Fill in the information above to see the result!
+        </div>
+
+    </section>
+    <footer>
+            <p>&copy;Trubert</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
